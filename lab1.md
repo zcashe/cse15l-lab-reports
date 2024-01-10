@@ -1,7 +1,7 @@
 
 [Index](https://zcashe.github.io/cse15l-lab-reports/index.html)
 ---
-# Lab Report
+# Lab 1 Report 
 ---
 ## Markdown
 I have learned how to
@@ -68,7 +68,7 @@ When we ls into a file it just shows us the relative path to the file
 ```
 [user@sahara ~]$ cat
 ```
-Produces empty line and doesn't allow me to enter anything into the command line anymore, I believe this is an error due to the directory not having any files to read
+Produces empty line and duplicates anything I enter into the command line, I believe this is an error due to trying to cat the root directory. 
 
 **Directory**
 ```
@@ -83,4 +83,4 @@ Tells us that it is a directory so it can't read us anything from it
 Bonjour le monde!
 ```
 It reads us the content from the file we selected
----
+
