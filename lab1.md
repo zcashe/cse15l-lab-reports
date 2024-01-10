@@ -90,5 +90,5 @@ Bonjour le monde!
 It reads us the content from the file we selected
 
 ## Final Message 
-![Image](doggy.png)
+![Image](dogstare.jpg)
 
