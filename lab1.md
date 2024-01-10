@@ -68,6 +68,10 @@ When we ls into a file it just shows us the relative path to the file
 **No Args**
 ```
 [user@sahara ~]$ cat
+hi
+hi
+test
+test
 ```
 Produces empty line and duplicates anything I enter into the command line, I believe this is an error due to trying to cat the root directory. 
 
