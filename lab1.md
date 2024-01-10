@@ -11,6 +11,7 @@ I have learned how to
 List numbers
 1. H
 2. I
+* `print(" Do Inline Code")`
 ---
 ## Command Line
 
@@ -83,4 +84,7 @@ Tells us that it is a directory so it can't read us anything from it
 Bonjour le monde!
 ```
 It reads us the content from the file we selected
+
+## Final Message 
+![Image](https://zcashe.github.io/cse15l-lab-reports/dog.HEIC)
 
