@@ -86,5 +86,5 @@ Bonjour le monde!
 It reads us the content from the file we selected
 
 ## Final Message 
-![Image](https://zcashe.github.io/cse15l-lab-reports/Dog.png)
+![Image](https://zcashe.github.io/cse15l-lab-reports/dog.png)
 
