@@ -86,5 +86,5 @@ Bonjour le monde!
 It reads us the content from the file we selected
 
 ## Final Message 
-![Image](dog.png)
+![Image](dog.jpg)
 
