@@ -1,6 +1,6 @@
 Hello Lab
 
-[Index](https://zcashe.github.io/cse15l-lab-reports/index.md)
+[Index](https://zcashe.github.io/cse15l-lab-reports/index.html)
 ---
 # Lab Report
 ---
@@ -9,9 +9,9 @@ I have learned how to
 * *Do Italics*
 *  **BOLD**
 *  > Do Blockquotes
-*  List numbers
-  1. Like
-  2. So
+List numbers
+1. H
+2. I
 ---
 ## Command Line
 
