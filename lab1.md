@@ -11,7 +11,7 @@ I have learned how to
 List numbers
 1. H
 2. I
-* `print(" Do Inline Code")`
+`print(" Do Inline Code")`
 ---
 ## Command Line
 
