@@ -90,6 +90,6 @@ Bonjour le monde!
 It reads us the content from the file we selected
 
 ## Final Message 
-![Image](dogstare.jpg)
-![Image](=P.jpg)
+![Image](assets/dogstare.jpg)
+![Image](assets/=P.jpg)
 
