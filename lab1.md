@@ -15,34 +15,36 @@ List numbers
 
 `print("Do Inline Code")`
 ---
+# Commands In Terminal
 ## Command Line
 
-# Using cd
+### Using cd
 
 
 **No Args**
 ```
-[user@sahara ~]$ cd
+[user@sahara ~]$ cd 
+[user@sahara ~]$ 
 ```
-> Puts user in home directory, doesn't do anything since already in home directory
+> Puts user in home directory, doesn't do anything since already in home directory.
 
 **Directory**
 ```
 [user@sahara ~]$ cd lecture1/
 [user@sahara ~/lecture1]$
 ```
-> Changes Directory to the specified directory
+> Changes Directory to the directory specifies in the argument, which we can see from the change in prompt.
 
 **File**
 ```
 [user@sahara ~/lecture1]$ cd messages/en-us.txt 
 bash: cd: messages/en-us.txt: Not a directory
 ```
-> Cd only allows us to move to directories not actual files, this produces a error message telling us that the thing we tried to cd into wasn't a directory
+> Cd only allows us to move to directories not actual files, this produces a error message telling us that the thing we tried to cd into wasn't a directory.
 
 
 
-# Using ls
+### Using ls
 
 **No Args**
 ```
@@ -65,7 +67,7 @@ lecture1/Hello.class
 ```
 > When we ls into a file it just shows us the relative path to the file
 
-# Using cat
+### Using cat
 ---
 **No Args**
 ```
