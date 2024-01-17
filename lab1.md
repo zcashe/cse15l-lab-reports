@@ -22,6 +22,7 @@ List numbers
 
 
 **No Args**
+Working Directory - /home
 ```
 [user@sahara ~]$ cd 
 [user@sahara ~]$ 
@@ -29,6 +30,7 @@ List numbers
 > Puts user in home directory, doesn't do anything since already in home directory.
 
 **Directory**
+Working Directory - /home
 ```
 [user@sahara ~]$ cd lecture1/
 [user@sahara ~/lecture1]$
@@ -36,6 +38,7 @@ List numbers
 > Changes Directory to the directory specifies in the argument, which we can see from the change in prompt.
 
 **File**
+Working Directory - /home/lecture1
 ```
 [user@sahara ~/lecture1]$ cd messages/en-us.txt 
 bash: cd: messages/en-us.txt: Not a directory
@@ -47,6 +50,7 @@ bash: cd: messages/en-us.txt: Not a directory
 ### Using ls
 
 **No Args**
+Working Directory - /home
 ```
 [user@sahara ~]$ ls
 lecture1
@@ -54,6 +58,7 @@ lecture1
 > Using ls without any arguments us the files and folders of our current directory.
 
 **Directory**
+Working Directory - /home
 ```
 [user@sahara ~]$ ls lecture1/
 Hello.class  Hello.java  messages  README
@@ -61,6 +66,7 @@ Hello.class  Hello.java  messages  README
 > This shows us the files and folders within the directory we put as the argument.
 
 **File**
+Working Directory - /home
 ```
 [user@sahara ~]$ ls lecture1/Hello.class 
 lecture1/Hello.class
@@ -70,6 +76,7 @@ lecture1/Hello.class
 ### Using cat
 ---
 **No Args**
+Working Directory - /home
 ```
 [user@sahara ~]$ cat
 hi
@@ -79,7 +86,8 @@ test
 ```
 > Produces empty line and duplicates anything I enter into the command line, I believe this is due to the cat reading the terminal and once we input it, it reads it back out.
 
-> **Directory**
+**Directory**
+Working Directory - /home
 ```
 [user@sahara ~]$ cat lecture1/
 cat: lecture1/: Is a directory
@@ -87,6 +95,7 @@ cat: lecture1/: Is a directory
 > When we run cat on a directory it produces an error message telling us that it is a directory so it can't read us anything from it.
 
 **File**
+Working Directory - /home/lecture1
 ```
 [user@sahara ~/lecture1]$ cat messages/fr.txt 
 Bonjour le monde!
