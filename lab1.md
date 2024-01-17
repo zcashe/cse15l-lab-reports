@@ -35,7 +35,7 @@ Working Directory - /home
 [user@sahara ~]$ cd lecture1/
 [user@sahara ~/lecture1]$
 ```
-> Changes Directory to the directory specifies in the argument, which we can see from the change in prompt.
+> Changes Directory to the directory specified in the argument, which we can see from the change in prompt.
 
 **File**
 Working Directory - /home/lecture1
@@ -43,7 +43,7 @@ Working Directory - /home/lecture1
 [user@sahara ~/lecture1]$ cd messages/en-us.txt 
 bash: cd: messages/en-us.txt: Not a directory
 ```
-> Cd only allows us to move to directories not actual files, this produces a error message telling us that the thing we tried to cd into wasn't a directory.
+> Cd only allows us to move to directories not actual files, so this produces a error message telling us that the thing we tried to cd into wasn't a directory.
 
 
 
@@ -55,7 +55,7 @@ Working Directory - /home
 [user@sahara ~]$ ls
 lecture1
 ```
-> Using ls without any arguments us the files and folders of our current directory.
+> Using ls without any arguments shows us the files and folders of our current directory.
 
 **Directory**
 Working Directory - /home
@@ -100,7 +100,7 @@ Working Directory - /home/lecture1
 [user@sahara ~/lecture1]$ cat messages/fr.txt 
 Bonjour le monde!
 ```
-> It reads us the content from the file we selected in the argument.
+> When we use cat on a file it reads us the content from the file we selected in the argument.
 
 ## Final Message 
 ![Image](assets/dogstare.jpg)
