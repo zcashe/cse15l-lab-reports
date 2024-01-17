@@ -51,21 +51,21 @@ bash: cd: messages/en-us.txt: Not a directory
 [user@sahara ~]$ ls
 lecture1
 ```
-> Shows us the content of the home directory
+> Using ls without any arguments us the files and folders of our current directory.
 
 **Directory**
 ```
 [user@sahara ~]$ ls lecture1/
 Hello.class  Hello.java  messages  README
 ```
-> This shows us the content within the directory we put as the argument
+> This shows us the files and folders within the directory we put as the argument.
 
 **File**
 ```
 [user@sahara ~]$ ls lecture1/Hello.class 
 lecture1/Hello.class
 ```
-> When we ls into a file it just shows us the relative path to the file
+> When we ls into a file it just shows us the relative path to the file from the directory where it was called.
 
 ### Using cat
 ---
@@ -77,21 +77,21 @@ hi
 test
 test
 ```
-> Produces empty line and duplicates anything I enter into the command line, I believe this is an error due to trying to cat the root directory. 
+> Produces empty line and duplicates anything I enter into the command line, I believe this is due to the cat reading the terminal and once we input it, it reads it back out.
 
-**Directory**
+> **Directory**
 ```
 [user@sahara ~]$ cat lecture1/
 cat: lecture1/: Is a directory
 ```
-> Tells us that it is a directory so it can't read us anything from it
+> When we run cat on a directory it produces an error message telling us that it is a directory so it can't read us anything from it.
 
 **File**
 ```
 [user@sahara ~/lecture1]$ cat messages/fr.txt 
 Bonjour le monde!
 ```
-> It reads us the content from the file we selected
+> It reads us the content from the file we selected in the argument.
 
 ## Final Message 
 ![Image](assets/dogstare.jpg)
