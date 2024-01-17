@@ -14,6 +14,7 @@ List numbers
 2. I
 
 `print("Do Inline Code")`
+
 ---
 # Commands In Terminal
 ## Command Line
