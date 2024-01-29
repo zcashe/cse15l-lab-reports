@@ -29,6 +29,7 @@ Working Directory - /home
 [user@sahara ~]$ 
 ```
 > Puts user in home directory, doesn't do anything since already in home directory.
+> This is not an error
 
 **Directory**
 Working Directory - /home
@@ -37,6 +38,7 @@ Working Directory - /home
 [user@sahara ~/lecture1]$
 ```
 > Changes Directory to the directory specified in the argument, which we can see from the change in prompt.
+> This is not an error.
 
 **File**
 Working Directory - /home/lecture1
@@ -45,7 +47,7 @@ Working Directory - /home/lecture1
 bash: cd: messages/en-us.txt: Not a directory
 ```
 > Cd only allows us to move to directories not actual files, so this produces a error message telling us that the thing we tried to cd into wasn't a directory.
-
+> This is an error.
 
 
 ### Using ls
@@ -65,6 +67,7 @@ Working Directory - /home
 Hello.class  Hello.java  messages  README
 ```
 > This shows us the files and folders within the directory we put as the argument.
+> This is not an error. 
 
 **File**
 Working Directory - /home
@@ -73,6 +76,7 @@ Working Directory - /home
 lecture1/Hello.class
 ```
 > When we ls into a file it just shows us the relative path to the file from the directory where it was called.
+> This is not an error
 
 ### Using cat
 ---
@@ -86,6 +90,7 @@ test
 test
 ```
 > Produces empty line and duplicates anything I enter into the command line, I believe this is due to the cat reading the terminal and once we input it, it reads it back out.
+> This is not an error 
 
 **Directory**
 Working Directory - /home
@@ -94,6 +99,7 @@ Working Directory - /home
 cat: lecture1/: Is a directory
 ```
 > When we run cat on a directory it produces an error message telling us that it is a directory so it can't read us anything from it.
+> This is an error message.
 
 **File**
 Working Directory - /home/lecture1
@@ -102,6 +108,7 @@ Working Directory - /home/lecture1
 Bonjour le monde!
 ```
 > When we use cat on a file it reads us the content from the file we selected in the argument.
+> This is not an error.
 
 ## Final Message 
 ![Image](assets/dogstare.jpg)
