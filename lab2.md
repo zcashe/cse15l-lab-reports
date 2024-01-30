@@ -8,7 +8,7 @@
 ![Image](assets/Lab2-chatServer.png)
 
 ## Using add message first time
-![Image](assets/Lab2-Message1.png)
+![Image](assets/Lab2-Message2.png)
 
 Methods Called:
 
@@ -17,7 +17,7 @@ Relevant arguments and field values:
 Which values change:
 
 ## Using add message second time
-![Image](assets/Lab2-Message2.png)
+![Image](assets/Lab2-Message1.png)
 
 Methods Called:
 
