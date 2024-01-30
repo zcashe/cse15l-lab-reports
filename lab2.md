@@ -10,28 +10,39 @@
 ## Using add message first time
 ![Image](assets/Lab2-Message2.png)
 
-Methods Called: url.getPath().equals()
-url.getPath().contains()
-Url.getQuery().split
-url.getQuery()
+Methods Called:
+1. url.getPath().equals()
+2. url.getPath().contains()
+3. Url.getQuery().split
+4. url.getQuery()
 
 
 
 Relevant arguments and field values:
-Argument url of type URI, is the url we are changing and loading the page with
+
+Argument url of type URI, is the url we are changing and loading the page with.
+
 Then we have the empty chatString value, the string array parameters which will contain the split url query.
 
 
 Which values change:
+
 When we load the new page with out ?s=Hi bruh&user=Zac
 the url value is now changed to have that at the end. 
+
 Then parameters is updated to be a string array split at the = and & signs, making it a length 4 array where
+
 Parameters[0] = s
+
 Parameters[1] = Hi bruh
+
 Parameters[2] = user
+
 Parameters[3] = Zac
+
 Then since parameters[0] = s, chatString gets updated
-to append Zac: Hi Bruh and the new line.
+to append "Zac: Hi Bruh" and the new line.
+
 Then because of the url encoding, the space gets turned into +, so we change it back to a space before we display.
 
 ## Using add message second time
