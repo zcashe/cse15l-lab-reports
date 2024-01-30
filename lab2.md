@@ -4,7 +4,23 @@
 # Lab 2 Report 
 ---
 # Part 1
+![Image](assets/Lab2-chatServer.png)
 
+![Image](assets/Lab2-Message1.png)
+## Using add message first time
+Methods Called:
+
+Relevant arguments and field values:
+
+Which values change:
+
+![Image](assets/Lab2-Message2.png)
+## Using add message first time
+Methods Called:
+
+Relevant arguments and field values:
+
+Which values change:
 
 
 
