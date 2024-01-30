@@ -24,7 +24,7 @@
 /Users/zac/.ssh/id_rsa.pub
 ```
 ## LS and absolute path to public and private key screenshot 
-![Image](assets/lab2-ssh.png)
+![Image](assets/Lab2-ssh.png)
 
 ## SSH in without password
-![Image](assets/lab2-filepath.png)
+![Image](assets/Lab2-filepath.png)
