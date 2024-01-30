@@ -38,12 +38,14 @@ Which values change:
 ```
 
 
-## Absolute pash to public key
+## Absolute pash to public key from ieng6 file system
 ```
-/Users/zac/.ssh/id_rsa.pub
+/home/linux/ieng6/oce/9e/zelders/.ssh/authorized_keys
 ```
-## LS and absolute path to public and private key screenshot 
+## LS and absolute path to  private key screenshot 
 ![Image](assets/Lab2-filepath.png)
+## LS and absolute path to public key screenshot
+![Image](assets/Lab2-publicKey.png)
 
 ## SSH in without password
 ![Image](assets/Lab2-ssh.png)
