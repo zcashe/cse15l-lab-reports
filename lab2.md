@@ -88,8 +88,8 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 
 
 
-6. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
-> This has the argument "\\+", " " which replaces all the + signs with space.
+6. chatString.replaceAll("\\\+", " ") - replaces + in chatString with space
+> This has the argument "\\\+", " " which replaces all the + signs with space.
 
 
 
