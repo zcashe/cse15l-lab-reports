@@ -12,27 +12,35 @@
 
 ### Methods Called:
 1. url.getPath() - gets path of the URL
+> This is not called on its own it is used in combination with other methods, but this method returns a string with the path of the url, so when we update the url with add-message?s=Hi bruh&user=Zac, "/add-message" gets returned.
+   
 2. url.getQuery() - gets query from URL
-3. url.getPath().equals("/") - Returns true if the path is /
-4. url.getPath().contains("add-message") - Returns true if add-message is contained in path
-5. url.getQuery().split("[=&-]") - splits query based on input
-6. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
+> This also is not used on its own, but similar to getPath(), getQuery just returns the string with the query in the url so when we update the url with add-message?s=Hi bruh&user=Zac, "s=Hello breh&user=Zac" gets returned.
+
+
+4. url.getPath().equals("/") - Returns true if the path is /
+> This has an argument "/" and the method checks to see if the path is simply "/".
+ 
+5. url.getPath().contains("add-message") - Returns true if add-message is contained in path
+> This has an argument "add-message" and if the path contains this string, it will return true.
+
+ 
+7. url.getQuery().split("[=&-]") - splits query based on input
+  > This has the argument "[=&-]" which tells the split method to separate the query based on the = and & signs.
+
+
+
+9. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
+> This has the argument "\\+", " " which replaces all the + signs with space.
 
 
 
 
-### Relevant arguments and field values:
+### Other relevant argument field values:
 
 Argument url of type URI, is the url we are changing and loading the page with.
 Then there are many string arguments such as 
 
-"/" - Which is called with equals to see if there an empty path
-
-"add-message" - Which tells contains to check the url for add-message
-
-"[=&-]" - which tells the split method to separate the query based on the = and & signs
-
-"\\+", " " - Which replaces all the + signs with space
 
 Then we have the empty chatString value, the string array parameters which will contain the split url query.
 
@@ -62,11 +70,31 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 
 ### Methods Called:
 1. url.getPath() - gets path of the URL
+> This is not called on its own it is used in combination with other methods, but this method returns a string with the path of the url, so when we update the url with add-message?s=Hi bruh&user=Zac, "/add-message" gets returned.
+   
 2. url.getQuery() - gets query from URL
-3. url.getPath().equals("/") - Returns true if the path is /
-4. url.getPath().contains("add-message") - Returns true if add-message is contained in path
-5. url.getQuery().split("[=&-]") - splits query based on input
-6. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
+> This also is not used on its own, but similar to getPath(), getQuery just returns the string with the query in the url so when we update the url with add-message?s=Hi bruh&user=Zac, "s=Hello breh&user=Zac" gets returned.
+
+
+4. url.getPath().equals("/") - Returns true if the path is /
+> This has an argument "/" and the method checks to see if the path is simply "/".
+ 
+5. url.getPath().contains("add-message") - Returns true if add-message is contained in path
+> This has an argument "add-message" and if the path contains this string, it will return true.
+
+ 
+7. url.getQuery().split("[=&-]") - splits query based on input
+  > This has the argument "[=&-]" which tells the split method to separate the query based on the = and & signs.
+
+
+
+9. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
+> This has the argument "\\+", " " which replaces all the + signs with space.
+
+
+
+
+### Other relevant argument field values:
 
 
 
@@ -78,8 +106,7 @@ Argument url of type URI, is the url we are changing and loading the page with.
 
 "add-message" - Which tells contains to check the url for add-message
 
-"[=&-]" - which tells the split method to separate the query based on the = and & signs
-
+"[=&-]" - 
 "\\+", " " - Which replaces all the + signs with space
 
 Then we have the current chatString value "Zac: Hi bruh \n", the string array parameters which will contain the split url query.
