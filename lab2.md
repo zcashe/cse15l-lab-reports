@@ -15,6 +15,7 @@ Methods Called:
 2. url.getPath().contains()
 3. Url.getQuery().split
 4. url.getQuery()
+5. chatString.ReplaceAll()
 
 
 
