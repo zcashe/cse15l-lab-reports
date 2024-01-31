@@ -18,19 +18,19 @@
 > This also is not used on its own, but similar to getPath(), getQuery just returns the string with the query in the url so when we update the url with add-message?s=Hi bruh&user=Zac, "s=Hello breh&user=Zac" gets returned.
 
 
-4. url.getPath().equals("/") - Returns true if the path is /
+3. url.getPath().equals("/") - Returns true if the path is /
 > This has an argument "/" and the method checks to see if the path is simply "/".
  
-5. url.getPath().contains("add-message") - Returns true if add-message is contained in path
+4. url.getPath().contains("add-message") - Returns true if add-message is contained in path
 > This has an argument "add-message" and if the path contains this string, it will return true.
 
  
-7. url.getQuery().split("[=&-]") - splits query based on input
+5. url.getQuery().split("[=&-]") - splits query based on input
   > This has the argument "[=&-]" which tells the split method to separate the query based on the = and & signs.
 
 
 
-9. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
+6. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
 > This has the argument "\\+", " " which replaces all the + signs with space.
 
 
@@ -38,8 +38,8 @@
 
 ### Other relevant argument field values:
 
-Argument url of type URI, is the url we are changing and loading the page with.
-Then there are many string arguments such as 
+Argument url of type URI, which contains the url we are changing and loading the page with.
+
 
 
 Then we have the empty chatString value, the string array parameters which will contain the split url query.
@@ -50,7 +50,7 @@ Then we have the empty chatString value, the string array parameters which will 
 When we load the new page with out ?s=Hi bruh&user=Zac
 the url value is now changed to have that at the end. 
 
-Then parameters is updated to be a string array split at the = and & signs, making it a length 4 array where
+Then parameters is updated to be the string array split at the = and & signs, making it a length 4 array where
 
 Parameters[0] = s
 
@@ -76,38 +76,30 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 > This also is not used on its own, but similar to getPath(), getQuery just returns the string with the query in the url so when we update the url with add-message?s=Hi bruh&user=Zac, "s=Hello breh&user=Zac" gets returned.
 
 
-4. url.getPath().equals("/") - Returns true if the path is /
+3. url.getPath().equals("/") - Returns true if the path is /
 > This has an argument "/" and the method checks to see if the path is simply "/".
  
-5. url.getPath().contains("add-message") - Returns true if add-message is contained in path
+4. url.getPath().contains("add-message") - Returns true if add-message is contained in path
 > This has an argument "add-message" and if the path contains this string, it will return true.
 
  
-7. url.getQuery().split("[=&-]") - splits query based on input
+5. url.getQuery().split("[=&-]") - splits query based on input
   > This has the argument "[=&-]" which tells the split method to separate the query based on the = and & signs.
 
 
 
-9. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
+6. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
 > This has the argument "\\+", " " which replaces all the + signs with space.
 
 
 
 
-### Other relevant argument field values:
-
-
 
 ### Relevant arguments and field values:
 
-Argument url of type URI, is the url we are changing and loading the page with.
+Argument url of type URI, which contains the url we are changing and loading the page with.
 
-"/" - Which is called with equals to see if there an empty path
 
-"add-message" - Which tells contains to check the url for add-message
-
-"[=&-]" - 
-"\\+", " " - Which replaces all the + signs with space
 
 Then we have the current chatString value "Zac: Hi bruh \n", the string array parameters which will contain the split url query.
 
