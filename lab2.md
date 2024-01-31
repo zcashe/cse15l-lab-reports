@@ -50,7 +50,7 @@ Then we have the empty chatString value, the string array parameters which will 
 When we load the new page with /add-message?s=Hi bruh&user=Zac the URI objects changes so now
 the url query value is now changed to be ?s=Hi+bruh&user=Zac and url path value is /add-message 
 
-Then parameters is updated to be the string array split at the = and & signs, making it a length 4 array where
+Then parameters is updated to be the string array of the query split at the = and & signs, making it a length 4 array where
 
 Parameters[0] = s
 
@@ -108,9 +108,9 @@ Then we have the current chatString value "Zac: Hi bruh \n", the string array pa
 
 When we reload the new page with /add-message?s=Yo Wassup&user=Lil bro the URI objects changes so now
 the url query value is now changed to ?s=Yo+Wassup&user=Lil+bro. 
-The url path value does gets updated to /add-message again.
+The url path value gets updated to /add-message again.
 
-Once again the string array parameters is updated to be a string array split at the = and & signs, making it a length 4 array where
+Once again the string array parameters is updated to be a string array of the query split at the = and & signs, making it a length 4 array where
 
 Parameters[0] = s
 
