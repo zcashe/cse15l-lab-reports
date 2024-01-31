@@ -26,7 +26,7 @@
 
  
 5. url.getQuery().split("[=&-]") - splits query based on input
-  > This has the argument "[=&-]" which tells the split method to separate the query based on the = and & signs.
+  > This has the argument "[=&-]" which tells the split method to separate the query string into a string array based on the = and & signs.
 
 
 
@@ -84,7 +84,7 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 
  
 5. url.getQuery().split("[=&-]") - splits query based on input
-  > This has the argument "[=&-]" which tells the split method to separate the query based on the = and & signs.
+> This has the argument "[=&-]" which tells the split method to separate the query string into a string array based on the = and & signs.
 
 
 
