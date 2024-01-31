@@ -5,7 +5,40 @@
 ---
 # Part 1
 ## Code for Chat Server
-![Image](assets/Lab2-ChatServer.png)
+```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+
+class Handler implements URLHandler {
+    
+    String chatString = "";
+    
+    public String handleRequest(URI url) {
+       
+        if (url.getPath().equals("/")) {
+            return chatString;
+        } else if (url.getPath().contains("add-message")) {
+            System.out.println(url.getPath());
+            System.out.println(url.getQuery());
+            String[] parameters = url.getQuery().split("[=&-]");
+                if (parameters[0].equals("s")) {
+                    chatString = chatString + parameters[3]+ ": " + parameters[1] + "\n";
+                    chatString = chatString.replaceAll("\\+", " ");
+                    
+                    }
+                    
+                    
+                    
+                    return chatString;
+        }else {
+            return "404 Not Found!";
+        }
+    }
+}
+
+```
+
 
 ## Using add message first time
 ![Image](assets/Lab2-Message2.png)
