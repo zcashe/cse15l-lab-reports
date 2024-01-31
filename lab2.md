@@ -48,20 +48,20 @@ Then we have the empty chatString value, the string array parameters which will 
 ### Which values change:
 
 When we load the new page with /add-message?s=Hi bruh&user=Zac the URI objects changes so now
-the url query value is now changed to be ?s=Hi bruh&user=Zac and url path value is /add-message 
+the url query value is now changed to be ?s=Hi+bruh&user=Zac and url path value is /add-message 
 
 Then parameters is updated to be the string array split at the = and & signs, making it a length 4 array where
 
 Parameters[0] = s
 
-Parameters[1] = Hi bruh
+Parameters[1] = Hi+bruh
 
 Parameters[2] = user
 
 Parameters[3] = Zac
 
 Then since parameters[0] = s, chatString gets updated
-to append "Zac: Hi Bruh" and the new line.
+to append "Zac: Hi+Bruh" and the new line.
 
 Then because of the url encoding, the space gets turned into +, so we change it back to a space before we display.
 
@@ -70,10 +70,10 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 
 ### Methods Called:
 1. url.getPath() - gets path of the URL
-> This is not called on its own it is used in combination with other methods, but this method returns a string with the path of the url, so when we update the url with add-message?s=Hi bruh&user=Zac, "/add-message" gets returned.
+> This is not called on its own it is used in combination with other methods, but this method returns a string with the path of the url, so when we update the url with add-message?s=Yo Wassup&user=Lil bro, "/add-message" gets returned.
    
 2. url.getQuery() - gets query from URL
-> This also is not used on its own, but similar to getPath(), getQuery just returns the string with the query in the url so when we update the url with add-message?s=Hi bruh&user=Zac, "s=Hello breh&user=Zac" gets returned.
+> This also is not used on its own, but similar to getPath(), getQuery just returns the string with the query in the url so when we update the url with add-message?s=Hi bruh&user=Zac, "s=Yo+Wassup&user=Lil+bro" gets returned.
 
 
 3. url.getPath().equals("/") - Returns true if the path is /
@@ -107,24 +107,24 @@ Then we have the current chatString value "Zac: Hi bruh \n", the string array pa
 ### Which values change:
 
 When we reload the new page with /add-message?s=Yo Wassup&user=Lil bro the URI objects changes so now
-the url query value is now changed to ?s=Yo Wassup&user=Lil bro. 
+the url query value is now changed to ?s=Yo+Wassup&user=Lil+bro. 
 The url path value does gets updated to /add-message again.
 
 Once again the string array parameters is updated to be a string array split at the = and & signs, making it a length 4 array where
 
 Parameters[0] = s
 
-Parameters[1] = Yo Wassup
+Parameters[1] = Yo+Wassup
 
 Parameters[2] = user
 
-Parameters[3] = Lil bro
+Parameters[3] = Lil+bro
 
 Then since parameters[0] = s, chatString gets updated
 to append "Lil bro: Yo Wassup" and the new line.
 
 
-Then because of the url encoding, the spaces gets turned into +, so we change them back to a space before we display.
+Once again because of the url encoding, the spaces got turned into +, so we change them back to a space before we display.
 
 This gives the update chatString variable "Zac: Hi bruh \n Lil bro: Yo wassup \n" 
 Where the \n represents new lines.
