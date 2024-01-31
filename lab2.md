@@ -126,7 +126,7 @@ We then display this message.
 ## LS and absolute path to  private key screenshot 
 ![Image](assets/Lab2-privateKey.png)
 ## LS and absolute path to public key screenshot
-![Image](assets/Lab2-publicKey.png)
+![Image](assets/Lab2-PublicKey.png)
 
 ## SSH in without password
 ![Image](assets/Lab2-ssh.png)
