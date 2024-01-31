@@ -124,7 +124,7 @@ We then display this message.
 /home/linux/ieng6/oce/9e/zelders/.ssh/authorized_keys
 ```
 ## LS and absolute path to  private key screenshot 
-![Image](assets/Lab2-filepath.png)
+![Image](assets/Lab2-privateKey.png)
 ## LS and absolute path to public key screenshot
 ![Image](assets/Lab2-publicKey.png)
 
