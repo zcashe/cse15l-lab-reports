@@ -5,7 +5,7 @@
 ---
 # Part 1
 ## Code for Chat Server
-![Image](assets/Lab2-chatServer.png)
+![Image](assets/Lab2-ChatServer.png)
 
 ## Using add message first time
 ![Image](assets/Lab2-Message2.png)
