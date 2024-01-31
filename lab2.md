@@ -63,7 +63,7 @@ Parameters[3] = Zac
 Then since parameters[0] = s, chatString gets updated
 to append "Zac: Hi+Bruh" and the new line.
 
-Then because of the url encoding, the space gets turned into +, so we change it back to a space before we display.
+Then because of the url encoding, the space gets turned into +, so we change it back to a space before we display finally getting chatString = "Zac: Hi Bruh \n".
 
 ## Using add message second time
 ![Image](assets/Lab2-Message1.png)
