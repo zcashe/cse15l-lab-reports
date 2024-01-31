@@ -60,7 +60,7 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 
 Argument url of type URI, is the url we are changing and loading the page with.
 
-Then we have the empty chatString value, the string array parameters which will contain the split url query.
+Then we have the current chatString value "Zac: Hi bruh \n", the string array parameters which will contain the split url query.
 
 
 ### Which values change:
