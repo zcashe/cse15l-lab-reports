@@ -11,10 +11,13 @@
 ![Image](assets/Lab2-Message2.png)
 
 ### Methods Called:
-1. url.getPath().equals("/")
-2. url.getPath().contains("add-message")
-3. Url.getQuery().split("[=&-]")
-4. chatString.replaceAll("\\+", " ")
+1. url.getPath() - gets path of the URL
+2. url.getQuery() - gets query from URL
+3. url.getPath().equals("/") - Returns true if the path is /
+4. url.getPath().contains("add-message") - Returns true if add-message is contained in path
+5. url.getQuery().split("[=&-]") - splits query based on input
+6. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
+
 
 
 
@@ -58,10 +61,12 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 ![Image](assets/Lab2-Message1.png)
 
 ### Methods Called:
-1. url.getPath().equals("/")
-2. url.getPath().contains("add-message")
-3. Url.getQuery().split("[=&-]")
-4. chatString.replaceAll("\\+", " ")
+1. url.getPath() - gets path of the URL
+2. url.getQuery() - gets query from URL
+3. url.getPath().equals("/") - Returns true if the path is /
+4. url.getPath().contains("add-message") - Returns true if add-message is contained in path
+5. url.getQuery().split("[=&-]") - splits query based on input
+6. chatString.replaceAll("\\+", " ") - replaces + in chatString with space
 
 
 
