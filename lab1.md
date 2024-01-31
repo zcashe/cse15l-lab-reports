@@ -29,7 +29,7 @@ Working Directory - /home
 [user@sahara ~]$ 
 ```
 > Puts user in home directory, doesn't do anything since already in home directory.
-> This is not an error
+> This is not an error.
 
 **Directory**
 Working Directory - /home
@@ -58,7 +58,7 @@ Working Directory - /home
 [user@sahara ~]$ ls
 lecture1
 ```
-> Using ls without any arguments shows us the files and folders of our current directory.
+> Using ls without any arguments shows us the files and folders of our current directory. This is not an error.
 
 **Directory**
 Working Directory - /home
@@ -76,7 +76,7 @@ Working Directory - /home
 lecture1/Hello.class
 ```
 > When we ls into a file it just shows us the relative path to the file from the directory where it was called.
-> This is not an error
+> This is not an error.
 
 ### Using cat
 ---
@@ -90,7 +90,7 @@ test
 test
 ```
 > Produces empty line and duplicates anything I enter into the command line, I believe this is due to the cat reading the terminal and once we input it, it reads it back out.
-> This is not an error 
+> This is not an error.
 
 **Directory**
 Working Directory - /home
@@ -99,7 +99,7 @@ Working Directory - /home
 cat: lecture1/: Is a directory
 ```
 > When we run cat on a directory it produces an error message telling us that it is a directory so it can't read us anything from it.
-> This is an error message.
+> This is an error.
 
 **File**
 Working Directory - /home/lecture1
