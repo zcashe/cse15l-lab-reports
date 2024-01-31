@@ -12,7 +12,7 @@
 
 ### Methods Called:
 1. url.getPath() - gets path of the URL
-> This is not called on its own it is used in combination with other methods, but this method returns a string with the path of the url, so when we update the url with add-message?s=Hi bruh&user=Zac, "/add-message" gets returned.
+> This is not called on its own it is used in combination with other methods, but this method returns a string with the path of the url, so when we update the url with add-message?s=Hi bruh&user=Zac, this returns just "/message" which was unexpected as I thought it would include the query as well.
    
 2. url.getQuery() - gets query from URL
 > This also is not used on its own, but similar to getPath(), getQuery just returns the string with the query in the url so when we update the url with add-message?s=Hi bruh&user=Zac, "s=Hello breh&user=Zac" gets returned.
@@ -48,7 +48,7 @@ Then we have the empty chatString value, the string array parameters which will 
 ### Which values change:
 
 When we load the new page with /add-message?s=Hi bruh&user=Zac the URI objects changes so now
-the url query value is now changed to be ?s=Hi bruh&user=Zac and url path is /add-message 
+the url query value is now changed to be ?s=Hi bruh&user=Zac and url path value is /add-message 
 
 Then parameters is updated to be the string array split at the = and & signs, making it a length 4 array where
 
@@ -108,7 +108,7 @@ Then we have the current chatString value "Zac: Hi bruh \n", the string array pa
 
 When we reload the new page with /add-message?s=Yo Wassup&user=Lil bro the URI objects changes so now
 the url query value is now changed to ?s=Yo Wassup&user=Lil bro. 
-The url path does not change.
+The url path value does gets updated to /add-message again.
 
 Once again the string array parameters is updated to be a string array split at the = and & signs, making it a length 4 array where
 
