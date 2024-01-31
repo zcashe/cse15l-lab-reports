@@ -21,6 +21,15 @@
 ### Relevant arguments and field values:
 
 Argument url of type URI, is the url we are changing and loading the page with.
+Then there are many string arguments such as 
+
+"/" - Which is called with equals to see if there an empty path
+
+"add-message" - Which tells contains to check the url for add-message
+
+"[=&-]" - which tells the split method to separate the query based on the = and & signs
+
+"\\+", " " - Which replaces all the + signs with space
 
 Then we have the empty chatString value, the string array parameters which will contain the split url query.
 
@@ -59,6 +68,14 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 ### Relevant arguments and field values:
 
 Argument url of type URI, is the url we are changing and loading the page with.
+
+"/" - Which is called with equals to see if there an empty path
+
+"add-message" - Which tells contains to check the url for add-message
+
+"[=&-]" - which tells the split method to separate the query based on the = and & signs
+
+"\\+", " " - Which replaces all the + signs with space
 
 Then we have the current chatString value "Zac: Hi bruh \n", the string array parameters which will contain the split url query.
 
