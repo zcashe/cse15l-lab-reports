@@ -11,11 +11,10 @@
 ![Image](assets/Lab2-Message2.png)
 
 Methods Called:
-1. url.getPath().equals()
-2. url.getPath().contains()
-3. Url.getQuery().split
-4. url.getQuery()
-5. chatString.ReplaceAll()
+1. url.getPath().equals("/")
+2. url.getPath().contains("add-message")
+3. Url.getQuery().split("[=&-]")
+4. chatString.replaceAll("\\+", " ")
 
 
 
@@ -50,10 +49,10 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 ![Image](assets/Lab2-Message1.png)
 
 Methods Called:
-1. url.getPath().equals()
-2. url.getPath().contains()
-3. Url.getQuery().split
-4. url.getQuery()
+1. url.getPath().equals("/")
+2. url.getPath().contains("add-message")
+3. Url.getQuery().split("[=&-]")
+4. chatString.replaceAll("\\+", " ")
 
 
 
