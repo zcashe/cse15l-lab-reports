@@ -10,7 +10,7 @@
 ## Using add message first time
 ![Image](assets/Lab2-Message2.png)
 
-Methods Called:
+### Methods Called:
 1. url.getPath().equals("/")
 2. url.getPath().contains("add-message")
 3. Url.getQuery().split("[=&-]")
@@ -18,14 +18,14 @@ Methods Called:
 
 
 
-Relevant arguments and field values:
+### Relevant arguments and field values:
 
 Argument url of type URI, is the url we are changing and loading the page with.
 
 Then we have the empty chatString value, the string array parameters which will contain the split url query.
 
 
-Which values change:
+### Which values change:
 
 When we load the new page with out ?s=Hi bruh&user=Zac
 the url value is now changed to have that at the end. 
@@ -48,7 +48,7 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 ## Using add message second time
 ![Image](assets/Lab2-Message1.png)
 
-Methods Called:
+### Methods Called:
 1. url.getPath().equals("/")
 2. url.getPath().contains("add-message")
 3. Url.getQuery().split("[=&-]")
@@ -56,14 +56,14 @@ Methods Called:
 
 
 
-Relevant arguments and field values:
+### Relevant arguments and field values:
 
 Argument url of type URI, is the url we are changing and loading the page with.
 
 Then we have the empty chatString value, the string array parameters which will contain the split url query.
 
 
-Which values change:
+### Which values change:
 
 When we reload the new page with ?s=Yo Wassup&user=Lil bro
 the url value is now changed to have that at the end. 
