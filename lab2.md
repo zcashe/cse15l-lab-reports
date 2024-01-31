@@ -47,8 +47,8 @@ Then we have the empty chatString value, the string array parameters which will 
 
 ### Which values change:
 
-When we load the new page with out ?s=Hi bruh&user=Zac
-the url value is now changed to have that at the end. 
+When we load the new page with /add-message?s=Hi bruh&user=Zac the URI objects changes so now
+the url query value is now changed to be ?s=Hi bruh&user=Zac and url path is /add-message 
 
 Then parameters is updated to be the string array split at the = and & signs, making it a length 4 array where
 
@@ -95,7 +95,7 @@ Then because of the url encoding, the space gets turned into +, so we change it 
 
 
 
-### Relevant arguments and field values:
+### Other Relevant arguments and field values:
 
 Argument url of type URI, which contains the url we are changing and loading the page with.
 
@@ -106,8 +106,9 @@ Then we have the current chatString value "Zac: Hi bruh \n", the string array pa
 
 ### Which values change:
 
-When we reload the new page with ?s=Yo Wassup&user=Lil bro
-the url value is now changed to have that at the end. 
+When we reload the new page with /add-message?s=Yo Wassup&user=Lil bro the URI objects changes so now
+the url query value is now changed to ?s=Yo Wassup&user=Lil bro. 
+The url path does not change.
 
 Once again the string array parameters is updated to be a string array split at the = and & signs, making it a length 4 array where
 
