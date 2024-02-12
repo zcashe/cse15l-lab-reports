@@ -23,7 +23,33 @@
 Source for grep information : [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
 
 
-## Command 1 - grep
+## Command 1 - find -name
+Example 1:
+```
+
+```
+>Explanation:
+
+Example 2:
+```
+```
+>Explanation:
+
+## Command 2 - find -empty
+
+Example 1:
+```
+
+```
+>Explanation:
+
+Example 2:
+```
+```
+>Explanation:
+
+## Command 3 - find -type
+
 Example 1:
 ```
 ```
@@ -34,31 +60,7 @@ Example 2:
 ```
 >Explanation:
 
-## Command 2 - grep
-
-Example 1:
-```
-```
->Explanation:
-
-Example 2:
-```
-```
->Explanation:
-
-## Command 3 - grep
-
-Example 1:
-```
-```
->Explanation:
-
-Example 2:
-```
-```
->Explanation:
-
-## Command 4 - grep
+## Command 4 - find -size
 
 Example 1:
 ```
