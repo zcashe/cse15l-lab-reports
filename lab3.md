@@ -13,7 +13,7 @@
 
 
 ## Symptom:
-![image](assets/IMG_1504.jpeg)
+![Image](assets/IMG_1504.jpeg)
 
 ## The Bug:
 
