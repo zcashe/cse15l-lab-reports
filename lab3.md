@@ -4,18 +4,48 @@
 ---
 # Part 1 Bug Testing
 
-## Failing Test:
-
-
-
-
 ## Non-Failing Test:
+```
+@Test 
+	public void testReverseOne() {
+    int[] singleArr = { 1 };
+    ArrayExamples.reverseInPlace(singleArr);
+    assertArrayEquals(new int[]{  }, singleArr);
+	}
+```
 
+
+
+## Failing Test:
+```
+@Test
+  public void testReverseReal(){
+    int[] numArr = {1,2,3};
+    ArrayExamples.reverseInPlace(numArr);
+    assertArrayEquals(new int[]{3,2,1}, numArr);
+  }
+```
 
 ## Symptom:
 ![Image](assets/IMG_1506.jpeg)
 
 ## The Bug:
+Before:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+After:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
 
 
 ---
