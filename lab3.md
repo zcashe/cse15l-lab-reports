@@ -24,6 +24,7 @@
 
 ## Command 1 - find -name
 Example 1: find technical/ -name 'preface.*'
+
 Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 
 ```
@@ -34,6 +35,7 @@ zac@Zacs-MacBook-Pro docsearch %
 >Explanation:
 
 Example 2: find technical/ -name 'chapter*.txt'
+
 Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical/ -name 'chapter*.txt'
@@ -60,6 +62,7 @@ zac@Zacs-MacBook-Pro docsearch %
 ## Command 2 - find -maxdepth
 
 Example 1: find technical -maxdepth 1 -type d
+
 Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -maxdepth 1 -type d
@@ -72,7 +75,8 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation:
 
-Example 2: find technical -maxdepth 2 -type d  
+Example 2: find technical -maxdepth 2 -type d
+
 Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -maxdepth 2 -type d               
@@ -94,6 +98,7 @@ zac@Zacs-MacBook-Pro docsearch %
 ## Command 3 - find -type
 
 Example 1: find technical -type d
+
 Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -type d
@@ -113,6 +118,7 @@ zac@Zacs-MacBook-Pro docsearch %
 >Explanation:
 
 Example 2: find technical/911report -type f
+
 Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical/911report -type f
@@ -140,6 +146,7 @@ zac@Zacs-MacBook-Pro docsearch %
 ## Command 4 - find -size
 
 Example 1: find technical -size +250k
+
 Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -size +250k
@@ -153,6 +160,7 @@ zac@Zacs-MacBook-Pro docsearch %
 >Explanation:
 
 Example 2: find technical -size -1k
+
 Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -size -1k
