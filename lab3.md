@@ -19,12 +19,12 @@
 
 
 ---
-# Part 2 Exploring grep
-Source for grep information : [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
+# Part 2 Exploring find
+Source for find information : [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)
 
 
 ## Command 1 - find -name
-Example 1:
+Example 1: find technical/ -name 'preface.*'
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical/ -name 'preface.*'
 technical//911report/preface.txt
@@ -32,7 +32,7 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation:
 
-Example 2:
+Example 2: find technical/ -name 'chapter*.txt'
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical/ -name 'chapter*.txt'
 technical//911report/chapter-13.4.txt
@@ -55,9 +55,9 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation:
 
-## Command 2 - find -empty
+## Command 2 - find -maxdepth
 
-Example 1:
+Example 1: find technical -maxdepth 1 -type d
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -maxdepth 1 -type d
 technical
@@ -69,7 +69,7 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation:
 
-Example 2:
+Example 2: find technical -maxdepth 2 -type d  
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -maxdepth 2 -type d               
 technical
@@ -89,7 +89,7 @@ zac@Zacs-MacBook-Pro docsearch %
 
 ## Command 3 - find -type
 
-Example 1:
+Example 1: find technical -type d
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -type d
 technical
@@ -107,7 +107,7 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation:
 
-Example 2:
+Example 2: find technical/911report -type f
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical/911report -type f
 technical/911report/chapter-13.4.txt
@@ -133,7 +133,7 @@ zac@Zacs-MacBook-Pro docsearch %
 
 ## Command 4 - find -size
 
-Example 1:
+Example 1: find technical -size +250k
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -size +250k
 technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
@@ -145,7 +145,7 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation:
 
-Example 2:
+Example 2: find technical -size -1k
 ```
 zac@Zacs-MacBook-Pro docsearch % find technical -size -1k
 technical
