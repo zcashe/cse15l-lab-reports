@@ -26,12 +26,32 @@ Source for grep information : [https://man7.org/linux/man-pages/man1/grep.1.html
 ## Command 1 - find -name
 Example 1:
 ```
-
+zac@Zacs-MacBook-Pro docsearch % find technical/ -name 'preface.*'
+technical//911report/preface.txt
+zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation:
 
 Example 2:
 ```
+zac@Zacs-MacBook-Pro docsearch % find technical/ -name 'chapter*.txt'
+technical//911report/chapter-13.4.txt
+technical//911report/chapter-13.5.txt
+technical//911report/chapter-13.1.txt
+technical//911report/chapter-13.2.txt
+technical//911report/chapter-13.3.txt
+technical//911report/chapter-3.txt
+technical//911report/chapter-2.txt
+technical//911report/chapter-1.txt
+technical//911report/chapter-5.txt
+technical//911report/chapter-6.txt
+technical//911report/chapter-7.txt
+technical//911report/chapter-9.txt
+technical//911report/chapter-8.txt
+technical//911report/chapter-12.txt
+technical//911report/chapter-10.txt
+technical//911report/chapter-11.txt
+zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation:
 
@@ -39,12 +59,31 @@ Example 2:
 
 Example 1:
 ```
-
+zac@Zacs-MacBook-Pro docsearch % find technical -maxdepth 1 -type d
+technical
+technical/government
+technical/plos
+technical/biomed
+technical/911report
+zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation:
 
 Example 2:
 ```
+zac@Zacs-MacBook-Pro docsearch % find technical -maxdepth 2 -type d               
+technical
+technical/government
+technical/government/About_LSC
+technical/government/Env_Prot_Agen
+technical/government/Alcohol_Problems
+technical/government/Gen_Account_Office
+technical/government/Post_Rate_Comm
+technical/government/Media
+technical/plos
+technical/biomed
+technical/911report
+zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation:
 
@@ -52,11 +91,43 @@ Example 2:
 
 Example 1:
 ```
+zac@Zacs-MacBook-Pro docsearch % find technical -type d
+technical
+technical/government
+technical/government/About_LSC
+technical/government/Env_Prot_Agen
+technical/government/Alcohol_Problems
+technical/government/Gen_Account_Office
+technical/government/Post_Rate_Comm
+technical/government/Media
+technical/plos
+technical/biomed
+technical/911report
+zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation:
 
 Example 2:
 ```
+zac@Zacs-MacBook-Pro docsearch % find technical/911report -type f
+technical/911report/chapter-13.4.txt
+technical/911report/chapter-13.5.txt
+technical/911report/chapter-13.1.txt
+technical/911report/chapter-13.2.txt
+technical/911report/chapter-13.3.txt
+technical/911report/chapter-3.txt
+technical/911report/chapter-2.txt
+technical/911report/chapter-1.txt
+technical/911report/chapter-5.txt
+technical/911report/chapter-6.txt
+technical/911report/chapter-7.txt
+technical/911report/chapter-9.txt
+technical/911report/chapter-8.txt
+technical/911report/preface.txt
+technical/911report/chapter-12.txt
+technical/911report/chapter-10.txt
+technical/911report/chapter-11.txt
+zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation:
 
@@ -64,11 +135,29 @@ Example 2:
 
 Example 1:
 ```
+zac@Zacs-MacBook-Pro docsearch % find technical -size +250k
+technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+technical/government/Gen_Account_Office/d01591sp.txt
+technical/911report/chapter-13.4.txt
+technical/911report/chapter-13.5.txt
+technical/911report/chapter-3.txt
+zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation:
 
 Example 2:
 ```
+zac@Zacs-MacBook-Pro docsearch % find technical -size -1k
+technical
+technical/government
+technical/government/About_LSC
+technical/government/Env_Prot_Agen
+technical/government/Alcohol_Problems
+technical/government/Post_Rate_Comm
+technical/plos/pmed.0020191.txt
+technical/plos/pmed.0020226.txt
+technical/911report
+zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation:
 
