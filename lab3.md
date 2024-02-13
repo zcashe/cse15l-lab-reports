@@ -7,11 +7,11 @@
 ## Non-Failing Test:
 ```
 @Test 
-	public void testReverseOne() {
+public void testReverseOne() {
     int[] singleArr = { 1 };
     ArrayExamples.reverseInPlace(singleArr);
     assertArrayEquals(new int[]{  }, singleArr);
-	}
+}
 ```
 
 
@@ -19,11 +19,11 @@
 ## Failing Test:
 ```
 @Test
-  public void testReverseReal(){
+public void testReverseReal(){
     int[] numArr = {1,2,3};
     ArrayExamples.reverseInPlace(numArr);
     assertArrayEquals(new int[]{3,2,1}, numArr);
-  }
+}
 ```
 
 ## Symptom:
