@@ -96,6 +96,9 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation: Here the find -name 'chapter*.txt' finds all the textfiles that begin with the word 'chapter' regardless of what comes next.
 
+So what does -name do and why is it useful?
+> The -name option finds files and directories based on the information given. It is extremely useful for finding files based on what you know about them and can be used in a lot of ways to find similar files.
+
 ## Command 2 - find -maxdepth
 
 Example 1: find technical -maxdepth 1 -type d
@@ -133,6 +136,9 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation: The maxdepth is 2 here so it will show all the directories in the technical folder, but since the depth is 2 it will also
 >show any directories that are inside the directories shown in maxdepth 1, but will not show any of their subdirectories.
+
+So what does -maxdepth do and why is it useful?
+> Maxdepth allows us to only peek a certain amount of layers into our directory, which can be useful for finding information especially if you need to know about organization on the higher levels.
 
 ## Command 3 - find -type
 
@@ -182,6 +188,9 @@ zac@Zacs-MacBook-Pro docsearch %
 ```
 >Explanation: The find -type f command here finds alls the elements within 911 report that are files using the keyword 'f'.
 
+So what does -type do and why is it useful?
+> The -type option lets us search by type, allowing us to sort through our files and directories for specifics, which can be useful if we need to know how many directories and subdirectories we have, or how many files we have.
+
 ## Command 4 - find -size
 
 Example 1: find technical -size +250k
@@ -215,6 +224,10 @@ technical/911report
 zac@Zacs-MacBook-Pro docsearch % 
 ```
 >Explanation: The find -size -1k finds everything that is less than 1 kb.
+
+So what does -size do and why is it useful?
+>The -size option allows us to search based on size, which is extremely useful if we want to collect information
+>on which files have a lot of data or not that much data.
 
 
 
