@@ -69,7 +69,7 @@ zac@Zacs-MacBook-Pro docsearch % find technical/ -name 'preface.*'
 technical//911report/preface.txt
 zac@Zacs-MacBook-Pro docsearch % 
 ```
->Explanation:
+>Explanation: Here the find -name 'preface.*' finds all files that have preface as the title regardless of the extension.
 
 Example 2: find technical/ -name 'chapter*.txt'
 
@@ -94,7 +94,7 @@ technical//911report/chapter-10.txt
 technical//911report/chapter-11.txt
 zac@Zacs-MacBook-Pro docsearch % 
 ```
->Explanation:
+>Explanation: Here the find -name 'chapter*.txt' finds all the textfiles that begin with the word 'chapter' regardless of what comes next.
 
 ## Command 2 - find -maxdepth
 
