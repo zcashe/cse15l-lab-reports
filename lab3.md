@@ -50,7 +50,10 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
-
+>Explanation: The old code didn't properly iterate through the array, because it changes [0] -> [2] but when it gets to [2] it tries to turn
+>it to [0] which is now [2] so [2] -> [2], this is why it doesn't work with the second one but does with the first.
+>The new code correctly cycles through and assigns the old values to the reversed order, and then we just assign the values
+>to the original array.
 
 ---
 # Part 2 Exploring find
@@ -107,7 +110,8 @@ technical/biomed
 technical/911report
 zac@Zacs-MacBook-Pro docsearch % 
 ```
->Explanation:
+>Explanation: The maxdepth command here controls how many layers the find searches through. Usually it would go through all directories
+>and the subdirectories, but since the maxdepth is 1 it will only go through the current layer.
 
 Example 2: find technical -maxdepth 2 -type d
 
@@ -127,7 +131,8 @@ technical/biomed
 technical/911report
 zac@Zacs-MacBook-Pro docsearch % 
 ```
->Explanation:
+>Explanation: The maxdepth is 2 here so it will show all the directories in the technical folder, but since the depth is 2 it will also
+>show any directories that are inside the directories shown in maxdepth 1, but will not show any of their subdirectories.
 
 ## Command 3 - find -type
 
@@ -149,7 +154,7 @@ technical/biomed
 technical/911report
 zac@Zacs-MacBook-Pro docsearch % 
 ```
->Explanation:
+>Explanation: The find -type d command here searches technical for all directories, by using the keyword 'd'. 
 
 Example 2: find technical/911report -type f
 
@@ -175,7 +180,7 @@ technical/911report/chapter-10.txt
 technical/911report/chapter-11.txt
 zac@Zacs-MacBook-Pro docsearch % 
 ```
->Explanation:
+>Explanation: The find -type f command here finds alls the elements within 911 report that are files using the keyword 'f'.
 
 ## Command 4 - find -size
 
@@ -191,7 +196,7 @@ technical/911report/chapter-13.5.txt
 technical/911report/chapter-3.txt
 zac@Zacs-MacBook-Pro docsearch % 
 ```
->Explanation:
+>Explanation: The find -size +250k finds everything that is are greater than 250 kb in size.
 
 Example 2: find technical -size -1k
 
@@ -209,24 +214,8 @@ technical/plos/pmed.0020226.txt
 technical/911report
 zac@Zacs-MacBook-Pro docsearch % 
 ```
->Explanation:
+>Explanation: The find -size -1k finds everything that is less than 1 kb.
 
-Chose one of the bugs from week 4's lab.
 
-Provide:
-
-A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-Briefly describe why the fix addresses the issue.
-
-Consider the commands less, find, and grep. Choose one of them. Online, find 4 interesting command-line options or alternate ways to use the command you chose. To find information about the commands, a simple Web search like “find command-line options” will probably give decent results. There is also a built-in command on many systems called man (short for “manual”) that displays information about commands; you can use man grep, for example, to see a long listing of information about how grep works. Also consider asking ChatGPT!
-
-For example, we saw the -name option for find in class. For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
-
-That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. Many commands like these have pretty sophisticated behavior possible – it can take years to be exposed to and learn all of the possible tricks and inner workings.
-
-Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it. See the syllabus on Academic Integrity and how to cite sources like ChatGPT for this class.
 
 
