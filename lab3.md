@@ -10,7 +10,7 @@
 public void testReverseOne() {
     int[] singleArr = { 1 };
     ArrayExamples.reverseInPlace(singleArr);
-    assertArrayEquals(new int[]{  }, singleArr);
+    assertArrayEquals(new int[]{ 1 }, singleArr);
 }
 ```
 
