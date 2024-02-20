@@ -27,7 +27,7 @@ public void testReverseReal(){
 ```
 
 ## Symptom:
-![Image](assets/IMG_1506.jpeg)
+![Image]()
 
 ## The Bug:
 Before:
