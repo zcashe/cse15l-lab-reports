@@ -34,7 +34,7 @@ which I use to run the tests.
 
 ```  / i n d e x 1 <enter> N ``` I use ```/index1``` to search and then use ```N``` to go to the last index1 (since I started at the top)
 
-``` l l l l l x i 2 <esc> :wq ``` Which moves my cursor and then ```x``` deletes the 1 in index1 and then ```i``` switches
+``` l l l l l x i 2 <esc> : w q  ``` Which moves my cursor and then ```x``` deletes the 1 in index1 and then ```i``` switches
 to insert mode and then 2 gets added to index making it index2 and then I ```<esc>``` to exit insert mode, then save and quit with ```:wq``` .
 
 ![Image](assets/lab-report4/step7-1.png)
