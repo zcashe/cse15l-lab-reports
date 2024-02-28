@@ -6,7 +6,7 @@
 # Part 1 
 
 ## Step 4 - Log Into IENG6
-``` <up> <enter> ``` The first command in my terminal is ```ssh zelders@ieng6-201.ucsd.edu``` which I use to access IENG6
+``` <up> <enter> ``` The first command in my terminal history is ```ssh zelders@ieng6-201.ucsd.edu``` which I use to access IENG6
 
 ![Image](assets/lab-report4/ieng4.png)
 
