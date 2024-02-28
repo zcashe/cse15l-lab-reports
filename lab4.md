@@ -79,11 +79,11 @@ Keys Pressed:``` g i t <space> a d d  <space> L i s t E x a m p l e s . j a v a 
 
 This adds the edited file so I can commit it.
 
-``` g i t <space> c o m m i t  <space> - m " F i x e d " ``` 
+Keys Pressed:``` g i t <space> c o m m i t  <space> - m " F i x e d " ``` 
 
 This commits the changes with a message.
 
-``` g i t <space> p u s h ``` 
+Keys Pressed:``` g i t <space> p u s h ``` 
 
 This pushes the changes to my github account.
 
