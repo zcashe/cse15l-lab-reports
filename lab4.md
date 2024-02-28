@@ -55,8 +55,8 @@ to insert mode and then 2 gets added to index making it index2 and then I esc to
 
 ``` git <space> add <space> ListExamples.java ``` This adds the edited file so I can commit it.
 
-``` git commit -m"Fixed Loop Bug" ``` This commits the changes with a message about what I fixed.
+``` git <space> commit <spacec> -m"Fixed Loop Bug" ``` This commits the changes with a message about what I fixed.
 
-``` git push ``` This pushes the changes to my github account.
+``` git <space> push ``` This pushes the changes to my github account.
 
 ![Image](assets/lab-report4/step9.png)
