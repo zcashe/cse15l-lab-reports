@@ -36,7 +36,7 @@ to insert mode and then 2 replaces the 1 and then I esc to exit insert mode, the
 ``` <up> <up> <up> <enter> ``` This brings me 3 back into my search history to ``` java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ``` which I use to run the tests.
 
 
-``` bash <space> test.sh ``` I use this here just to double check everything matches.
+``` bash <space> test.sh ``` I use this here just to double check everything matches. This is the same as the two commands above.
 
 
 
