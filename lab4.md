@@ -6,36 +6,36 @@
 # Part 1 
 
 ## Step 4 - Log Into IENG6
-``` <up> <enter> ``` The first command in my terminal is ```ssh zelders@ieng6-201.ucsd.edu```
+``` <up> <enter> ``` The first command in my terminal is ```ssh zelders@ieng6-201.ucsd.edu``` which I use to access IENG6
 
 ![Image](assets/lab-report4/ieng4.png)
 
 
 ## Step 5 - git clone the forked repository
 ``` <up> <up> <up> <up> <up> <up> <up> <up> <up> <enter> ``` Once logged into IENG I traverse up 9 times in my history and get to 
-```git clone git@github.com:zcashe/lab7.git```
+```git clone git@github.com:zcashe/lab7.git``` which I use to clone the forked repository.
 
 ![Image](assets/lab-report4/clone.png)
 
 ## Step 6 - Run the tests, demonstrating that they fail
 ``` cd <space> lab7 ``` Change Directory into the lab7 file we just cloned.
 
-``` <command> <shift> v <enter> ``` Here I paste in the ``` javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ``` in order to 
+``` <command> v <enter> ``` Here I paste in the ``` javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ``` in order to 
 compile the code.
 
-``` <up> <up> <up> <up> <up> <up> <up> <up> <enter> ``` I traverse up 8 times into my history and get the 
+``` <up> <up> <up> <up> <up> <up> <up> <up> <enter> ``` I traverse up 8 times into my history and get
 ``` java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ```
 which I use to run the tests.
 
 ![Image](assets/lab-report4/step6.png)
 
 ## Step 7 - Edit the code file to fix the failing test
-``` vim <space> ListExamples.java``` I use vim to open up the file.
+``` vim <space> ListExamples.java``` I use vim to open up the ListExamples file that contains the bug.
 
-``` /index1 <enter> N ``` I use /index1 to search and then use N to go to the last index1 (since I started at the top)
+``` /index1 <enter> N ``` I use ```/index1``` to search and then use ```N``` to go to the last index1 (since I started at the top)
 
-``` l l l l l x i 2 <esc> :wq ``` Which moves my cursor and then x deltes the 1 in index1 and then i switches
-to insert mode and then 2 gets added to index making it index2 and then I esc to exit insert mode, then save and quit with :wq .
+``` l l l l l x i 2 <esc> :wq ``` Which moves my cursor and then ```x``` deletes the 1 in index1 and then ```i``` switches
+to insert mode and then 2 gets added to index making it index2 and then I ```<esc>``` to exit insert mode, then save and quit with ```:wq``` .
 
 ![Image](assets/lab-report4/step7-1.png)
 
