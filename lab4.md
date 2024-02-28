@@ -18,9 +18,9 @@
 ![Image](assets/lab-report4/clone.png)
 
 ## Step 6 - Run the tests, demonstrating that they fail
-``` cd <space> lab7 ``` Change Directory into the lab7 file we just cloned.
+``` c d <space> l a b 7 ``` Change Directory into the lab7 file we just cloned.
 
-``` <command> v <enter> ``` Here I paste in the ``` javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ``` in order to 
+``` <command+v> <enter> ``` Here I paste in the ``` javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ``` in order to 
 compile the code.
 
 ``` <up> <up> <up> <up> <up> <up> <up> <up> <enter> ``` I traverse up 8 times into my history and get
@@ -30,9 +30,9 @@ which I use to run the tests.
 ![Image](assets/lab-report4/step6.png)
 
 ## Step 7 - Edit the code file to fix the failing test
-``` vim <space> ListExamples.java``` I use vim to open up the ListExamples file that contains the bug.
+``` v i m  <space> L i s t E x a m p l e s . j a v a ``` I use vim to open up the ListExamples file that contains the bug.
 
-``` /index1 <enter> N ``` I use ```/index1``` to search and then use ```N``` to go to the last index1 (since I started at the top)
+```  / i n d e x 1 <enter> N ``` I use ```/index1``` to search and then use ```N``` to go to the last index1 (since I started at the top)
 
 ``` l l l l l x i 2 <esc> :wq ``` Which moves my cursor and then ```x``` deletes the 1 in index1 and then ```i``` switches
 to insert mode and then 2 gets added to index making it index2 and then I ```<esc>``` to exit insert mode, then save and quit with ```:wq``` .
@@ -47,16 +47,16 @@ to insert mode and then 2 gets added to index making it index2 and then I ```<es
 ``` <up> <up> <up> <enter> ``` This brings me 3 back into my search history to ``` java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ``` which I use to run the tests.
 
 
-``` bash <space> test.sh ``` I use this here just to double check everything matches. This is the same as the two commands above.
+``` b a s h <space> t e s t . s h  ``` I use this here just to double check everything matches. This is the same as the two commands above.
 
 ![Image](assets/lab-report4/step8.png)
 
 ## Step 9 - Commit and push the resulting change to your Github account
 
-``` git <space> add <space> ListExamples.java ``` This adds the edited file so I can commit it.
+``` g i t <space> a d d  <space> L i s t E x a m p l e s . j a v a ``` This adds the edited file so I can commit it.
 
-``` git <space> commit <space> -m"Fixed Loop Bug" ``` This commits the changes with a message about what I fixed.
+``` g i t <space> c o m m i t  <space> - m " F i x e d " ``` This commits the changes with a message.
 
-``` git <space> push ``` This pushes the changes to my github account.
+``` g i t <space> p u s h ``` This pushes the changes to my github account.
 
 ![Image](assets/lab-report4/step9.png)
