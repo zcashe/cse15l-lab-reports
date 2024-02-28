@@ -26,8 +26,8 @@ which I use to run the tests.
 ## Step 7 - Edit the code file to fix the failing test
 ``` vim <space> ListExamples.java``` I use vim to open up the file.
 ``` /index1 <enter> N ``` I use /index1 to search and then use N to go to the last index1 (since I started at the top)
-``` l l l l l x i 2 <esc> :wq ``` Which moves my cursor and then x deltes the1 1 in index1 and then i switches
-to insert mode and then 2 replaces the 1 and then I esc to exit insert mode, then save and quit with :wq .
+``` l l l l l x i 2 <esc> :wq ``` Which moves my cursor and then x deltes the 1 in index1 and then i switches
+to insert mode and then 2 gets added to index making it index2 and then I esc to exit insert mode, then save and quit with :wq .
 
 
 ## Step 8 - Run the tests, demonstrating that they now succeed
