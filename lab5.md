@@ -51,7 +51,7 @@ Bug Description:
 
 <img width="704" alt="Screenshot 2024-03-12 at 11 09 16 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/ac39372a-5f7f-419f-a4e9-6eff6d567c1f">
 
-> After the ta helps and the submission variable echos out the correct pass, it doesn't properly compile
+> After the ta helps and the submission variable echos out the correct pass, it doesn't properly compile.
 > The second part is that even once the first part finds the correct file the compilation fails and it gives and error.
 
 ## File Structure
@@ -189,24 +189,24 @@ echo $gradescript >> grade.txt
 ```
 
 ## Command Line arguments to get bug
-The bug occurs when running the bash script with ```bash test.sh```
+
+>The bug occurs when running the bash script with ```bash test.sh```
 
 ## How to Fix the bug
 
-So this is a multilayered bug. First I needed to correct the submission variable
+>So this is a multilayered bug. First I needed to correct the submission variable
 
-```submission=$(find "JavaLab" -name "*.java")``` instead of ```submission=$(find / -name "*.java")```
-The original was searching in the wrong directory for the java files, but the second one searches just the JavaLab directory.
+>```submission=$(find "JavaLab" -name "*.java")``` instead of ```submission=$(find / -name "*.java")```
+>The original was searching in the wrong directory for the java files, but the second one searches just the JavaLab directory.
 
-Then in the compilation stage, I fix it by having 
-```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar $submission``` instead of ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission```
+>Then in the compilation stage, I fix it by having 
+>```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar $submission``` instead of ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission```
 
-In Bash the variables need to be marked with a $ if they are going to be used inside of a command like this. Otherwise it doesn't recognize it as a variable.
+>In Bash the variables need to be marked with a $ if they are going to be used inside of a command like this. Otherwise it doesn't recognize it as a variable.
 
+>Then once you do all this the code works perfectly, so it was a mix of incorrect command usage and bash syntax issues.
 
-Then once you do all this the code works perfectly, so it was a mix of incorrect command usage and bash syntax issues.
-
-(Note: The actual java test is meant to fail so I can test that when the bash script runs properly it gives the accurate result 50%)
+>(Note: The actual java test is meant to fail so I can test that when the bash script runs properly it gives the accurate result 50%)
 
 ---
 # Part 2 - Reflection
