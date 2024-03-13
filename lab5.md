@@ -50,11 +50,8 @@ Bug Description:
 ## File Structure
 ```
 ├── JavaLab
-│   ├── ListExamples.class
 │   ├── ListExamples.java
-│   ├── ListExamplesTests.class
-│   ├── ListExamplesTests.java
-│   └── StringChecker.class
+│   └── ListExamplesTests.java
 ├── grade.txt
 ├── junit-output.txt
 ├── lib
@@ -137,31 +134,12 @@ public class ListExamplesTests {
 
 grade.txt
 ```
-Final grade is 0 %
+{empty because code fails}
 ```
 
 junit-output.txt
 ```
-JUnit version 4.13.2
-..E
-Time: 11.615
-There was 1 failure:
-1) testMerge2(ListExamplesTests)
-java.lang.OutOfMemoryError: Java heap space
-	at java.base/java.util.Arrays.copyOf(Arrays.java:3513)
-	at java.base/java.util.Arrays.copyOf(Arrays.java:3482)
-	at java.base/java.util.ArrayList.grow(ArrayList.java:237)
-	at java.base/java.util.ArrayList.grow(ArrayList.java:244)
-	at java.base/java.util.ArrayList.add(ArrayList.java:483)
-	at java.base/java.util.ArrayList.add(ArrayList.java:496)
-	at ListExamples.merge(ListExamples.java:42)
-	at ListExamplesTests.testMerge2(ListExamplesTests.java:19)
-	at java.base/java.lang.invoke.LambdaForm$DMH/0x00000008000c2400.invokeVirtual(LambdaForm$DMH)
-	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008000c3000.invoke(LambdaForm$MH)
-	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
-
-FAILURES!!!
-Tests run: 2,  Failures: 1
+{Empty Doesn't run}
 ```
 
 test.sh
@@ -190,7 +168,7 @@ then
 fi
 tests=$(grep -o "Tests run: [0-9]*" junit-output.txt | cut -d' ' -f3)
 
-failures=$(grep -o "Tests run: [0-9]*" junit-output.txt | cut -d' ' -f2)
+failures=$(grep -o "Failures: [0-9]*" junit-output.txt | cut -d' ' -f2)
 
 successful_tests=$((tests - failures))
 
