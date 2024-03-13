@@ -6,7 +6,7 @@
 
 This is inspired by something that actually happened during one of my labs. 
 
-## Original Edstem Post 
+## Fake Edstem Post 
 Ed Stem Post (as student)
 ```
 Hello I need help on my lab 7 report, I'm trying to run the grading script on my find command,
