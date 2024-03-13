@@ -22,8 +22,8 @@ then I am trying to compile it by using javac -cp .:lib/hamcrest-core-1.3.jar:li
 
 Any Suggestions?
 ```
-<img width="543" alt="Screenshot 2024-02-28 at 2 28 54 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/cd4ea850-2758-4640-b42f-76d3e3b6d896">
  
+<img width="678" alt="Screenshot 2024-03-12 at 10 25 14 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/d18eea9e-ab31-42be-b74c-79d10588d920">
 
 
 ## TA Response
