@@ -4,7 +4,8 @@
 ---
 # Part 1 – Debugging Scenario
 
-## Original Edstem Post (Fake Post I made editting the html of the site)
+## Original Edstem Post 
+
 
 
 ## TA Response (Fake Response I made editting the html of the site)
@@ -14,7 +15,29 @@
 
 
 ## File Structure
-
+```
+├── GradeServer.java
+├── Server.java
+├── TestListExamples.java
+├── grade.sh
+├── grading-area
+│   ├── IsMoon.class
+│   ├── ListExamples.class
+│   ├── ListExamples.java
+│   ├── StringChecker.class
+│   ├── TestListExamples.class
+│   ├── TestListExamples.java
+│   ├── grade.txt
+│   ├── junit-output.txt
+│   └── lib
+│       ├── hamcrest-core-1.3.jar
+│       └── junit-4.13.2.jar
+├── lib
+│   ├── hamcrest-core-1.3.jar
+│   └── junit-4.13.2.jar
+└── student-submission
+    └── ListExamples.java
+```
 
 ## File Contents
 
