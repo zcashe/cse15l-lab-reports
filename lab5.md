@@ -30,5 +30,6 @@
 # Part 2 - Reflection
 
 In the second half of the quarter I learned a lot about using the command line. The bash scripting and java command processes are very interesting, although
-I do really structure remembering the bash syntax. However I recognize the use and how important it can be for creating and running scripts. Using the java debugger is also something I learned how to do
+I do really struggle remembering the bash syntax. However I recognize the use and how important it can be for creating and running scripts. Using the java debugger is also something I learned how to do
 and it seems really useful especially for when I have long complicated code and need to understand what all the variables are doing. 
+Overall I feel as though I learned a lot of this quarter and want to learn even more.
