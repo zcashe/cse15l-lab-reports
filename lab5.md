@@ -15,12 +15,14 @@ however I get this error
 I think it might have something to do with my find command searching to far,
 but I'm not using -r so I don't think its recursive.
 
+
+
 I am just trying to find and store the filename using submission=$(find / -name "*.java")
 then I am trying to compile it by using javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission.
 
 Any Suggestions?
 ```
-![Image](assets/lab-report5/edstem_student)
+<img width="543" alt="Screenshot 2024-02-28 at 2 28 54 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/cd4ea850-2758-4640-b42f-76d3e3b6d896">
  
 
 
