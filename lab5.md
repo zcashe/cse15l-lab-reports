@@ -17,6 +17,7 @@ but I'm not using -r so I don't think its recursive.
 
 
 
+
 I am just trying to find and store the filename using submission=$(find / -name "*.java")
 then I am trying to compile it by using javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission.
 
@@ -45,6 +46,8 @@ Let me know how that goes and if your problem gets solved.
 
 Bug Description:
 > This is a 2 part bug, the first part was the find command finding too many files and not the proper java file inside my directory
+<img width="704" alt="Screenshot 2024-03-12 at 11 09 16 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/ac39372a-5f7f-419f-a4e9-6eff6d567c1f">
+> After the ta helps and the submission variable echos out the correct pass, it doesn't properly compile
 > The second part is that even once the first part finds the correct file the compilation fails and it gives and error.
 
 ## File Structure
