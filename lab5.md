@@ -35,15 +35,20 @@ Let me know how that goes and if your problem gets solved.
 
 
 > Bug Description:
+>
+> This is a 2 part bug, the first part was the find command finding too many files and not the proper java file inside my directory
+> The second part is that even once the first part finds the correct file the compilation fails and it gives and error.
+>
 > 
 
 ## File Structure
 ```
-├── ListExamples.class
-├── ListExamples.java
-├── ListExamplesTests.class
-├── ListExamplesTests.java
-├── StringChecker.class
+├── JavaLab
+│   ├── ListExamples.class
+│   ├── ListExamples.java
+│   ├── ListExamplesTests.class
+│   ├── ListExamplesTests.java
+│   └── StringChecker.class
 ├── grade.txt
 ├── junit-output.txt
 ├── lib
@@ -197,7 +202,7 @@ The bug occurs when running the bash script with ```bash test.sh```
 
 ## How to Fix the bug
 
-So this is a multilayers bug. First I needed to correct the submission variable
+So this is a multilayered bug. First I needed to correct the submission variable
 
 ```submission=$(find "JavaLab" -name "*.java")``` instead of ```submission=$(find / -name "*.java")```
 
