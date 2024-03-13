@@ -9,7 +9,7 @@
 > Hello, I need help on the recent lab. I was trying to run my script and I keep getting this strange behavior,
 
 
-## TA Response (Fake Response I made editting the html of the site)
+## TA Response
 
 > Hello, have you tried using the 
 
