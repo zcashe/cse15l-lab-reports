@@ -39,13 +39,15 @@ Let me know how that goes and if your problem gets solved.
 
 ## Screenshot from using the help and Bug description
 
-> OK I used your solution here, however it still seems to have this weird effect.
+> OK I used your solution here, however it still seems to have this weird effect. I don't understand why it won't compile.
 
 <img width="711" alt="Screenshot 2024-03-12 at 10 39 06 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/76166c6e-f0c2-4b56-b395-14667587d680">
 
 
+
+
 Bug Description:
-> This is a 2 part bug, the first part was the find command finding too many files and not the proper java file inside my directory
+> This is a 2 part bug, the first part was the find command finding too many files and not the proper java file inside my directory which I got help with.
 
 <img width="704" alt="Screenshot 2024-03-12 at 11 09 16 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/ac39372a-5f7f-419f-a4e9-6eff6d567c1f">
 
