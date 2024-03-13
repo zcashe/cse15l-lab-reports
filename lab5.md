@@ -5,17 +5,33 @@
 # Part 1 – Debugging Scenario
 
 ## Original Edstem Post 
-![Image](assets/lab-report4/ieng4.png)
+Ed Stem Post (as student)
+```
+Hello I need help on my lab 7 report, I try to run my updated bash script, and it seems to work halfway. I'm trying to run the grading script on my find command, however I get this error
+
+I think it might have something to do with my find command.
+
+I am just trying to find and store the filename using submission=$(find / -name "*.java")
+then I am trying to compile it by using javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission.
+
+Any Suggestions?
+```
+![Image](assets/lab-report5/edstem_student)
  
 
 
 ## TA Response
-![Image](assets/lab-report4/ieng4.png)
+I think that your find command is being used incorrectly, can you try instead of using / use find "(file_directory)" -name "*.java".
+Let me know how that goes and if your problem gets solved.
+
+
 
 
 ## Screenshot from using the help and Bug description
 
 > OK I used your solution here, however it still seems to have this weird effect.
+
+<img width="711" alt="Screenshot 2024-03-12 at 10 39 06 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/76166c6e-f0c2-4b56-b395-14667587d680">
 
 
 > Bug Description:
@@ -139,7 +155,9 @@ Tests run: 2,  Failures: 1
 
 test.sh
 ```
-javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+submission=$(find / -name "*.java")
+
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission
 
 if [[ $? -ne 0 ]]
 then 
@@ -175,11 +193,32 @@ echo $gradescript >> grade.txt
 ```
 
 ## Command Line arguments to get bug
-
+The bug occurs when running the bash script with ```bash test.sh```
 
 ## How to Fix the bug
 
+So this is a multilayers bug. First I needed to correct the submission variable
 
+```submission=$(find "JavaLab" -name "*.java")``` instead of ```submission=$(find / -name "*.java")```
+
+Then in the compilation stage, I fix it by having 
+```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar $submission``` instead of ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission```
+
+Then it compiles, but the math isn't correct because of this:
+
+```
+tests=$(grep -o "Tests run: [0-9]*" junit-output.txt | cut -d' ' -f3)
+
+
+failures=$(grep -o "Tests run: [0-9]*" junit-output.txt | cut -d' ' -f2)
+```
+
+I messed up and it should be Tests run: in failues it should be:
+``` failures=$(grep -o "Failures: [0-9]*" junit-output.txt | cut -d' ' -f2)```
+
+Then once you do all this the code works perfectly, so it was a mix of incorrect command usage, bash syntax issues, and a human error that was hard to spot.
+
+(Note: The actual java test is meant to fail so I can test that when the bash script runs properly it gives the accurate result 50%)
 
 ---
 # Part 2 - Reflection
