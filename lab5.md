@@ -6,13 +6,20 @@
 
 ## Original Edstem Post 
 
+>> Hello, I need help on the recent lab. I was trying to run my script and I keep getting this strange behavior,
 
 
 ## TA Response (Fake Response I made editting the html of the site)
 
+>> Hello, have you tried using the 
 
-## Screenshot and Bug description
+## Screenshot from using the help and Bug description
 
+>> OK I used your solution here, however it still seems to have this weird effect.
+
+
+>> Bug Description:
+>> 
 
 ## File Structure
 ```
