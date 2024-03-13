@@ -37,7 +37,25 @@
 ```
 
 ## File Contents
+ListExamples.java
+```
+```
 
+ListExamplesTests.java
+```
+```
+
+grade.txt
+```
+```
+
+junit-output.txt
+```
+```
+
+test.sh
+```
+```
 
 ## Command Line arguments to get bug
 
