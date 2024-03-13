@@ -4,12 +4,16 @@
 ---
 # Part 1 – Debugging Scenario
 
+This is inspired by something that actually happened during one of my labs. 
+
 ## Original Edstem Post 
 Ed Stem Post (as student)
 ```
-Hello I need help on my lab 7 report, I try to run my updated bash script, and it seems to work halfway. I'm trying to run the grading script on my find command, however I get this error
+Hello I need help on my lab 7 report, I'm trying to run the grading script on my find command,
+however I get this error
 
-I think it might have something to do with my find command.
+I think it might have something to do with my find command searching to far,
+but I'm not using -r so I don't think its recursive.
 
 I am just trying to find and store the filename using submission=$(find / -name "*.java")
 then I am trying to compile it by using javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission.
@@ -21,8 +25,11 @@ Any Suggestions?
 
 
 ## TA Response
-I think that your find command is being used incorrectly, can you try instead of using / use find "(file_directory)" -name "*.java".
+```
+I think that your find command is being used incorrectly,
+can you try instead of using / use find "(file_directory)" -name "*.java".
 Let me know how that goes and if your problem gets solved.
+```
 
 
 
@@ -34,12 +41,9 @@ Let me know how that goes and if your problem gets solved.
 <img width="711" alt="Screenshot 2024-03-12 at 10 39 06 PM" src="https://github.com/zcashe/cse15l-lab-reports/assets/96392105/76166c6e-f0c2-4b56-b395-14667587d680">
 
 
-> Bug Description:
->
+Bug Description:
 > This is a 2 part bug, the first part was the find command finding too many files and not the proper java file inside my directory
 > The second part is that even once the first part finds the correct file the compilation fails and it gives and error.
->
-> 
 
 ## File Structure
 ```
@@ -205,23 +209,15 @@ The bug occurs when running the bash script with ```bash test.sh```
 So this is a multilayered bug. First I needed to correct the submission variable
 
 ```submission=$(find "JavaLab" -name "*.java")``` instead of ```submission=$(find / -name "*.java")```
+The original was searching in the wrong directory for the java files, but the second one searches just the JavaLab directory.
 
 Then in the compilation stage, I fix it by having 
 ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar $submission``` instead of ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar submission```
 
-Then it compiles, but the math isn't correct because of this:
-
-```
-tests=$(grep -o "Tests run: [0-9]*" junit-output.txt | cut -d' ' -f3)
+In Bash the variables need to be marked with a $ if they are going to be used inside of a command like this. Otherwise it doesn't recognize it as a variable.
 
 
-failures=$(grep -o "Tests run: [0-9]*" junit-output.txt | cut -d' ' -f2)
-```
-
-I messed up and it should be Tests run: in failues it should be:
-``` failures=$(grep -o "Failures: [0-9]*" junit-output.txt | cut -d' ' -f2)```
-
-Then once you do all this the code works perfectly, so it was a mix of incorrect command usage, bash syntax issues, and a human error that was hard to spot.
+Then once you do all this the code works perfectly, so it was a mix of incorrect command usage and bash syntax issues.
 
 (Note: The actual java test is meant to fail so I can test that when the bash script runs properly it gives the accurate result 50%)
 
