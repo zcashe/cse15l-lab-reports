@@ -23,27 +23,17 @@
 
 ## File Structure
 ```
-├── GradeServer.java
-├── Server.java
-├── TestListExamples.java
-├── grade.sh
-├── grading-area
-│   ├── IsMoon.class
-│   ├── ListExamples.class
-│   ├── ListExamples.java
-│   ├── StringChecker.class
-│   ├── TestListExamples.class
-│   ├── TestListExamples.java
-│   ├── grade.txt
-│   ├── junit-output.txt
-│   └── lib
-│       ├── hamcrest-core-1.3.jar
-│       └── junit-4.13.2.jar
+├── ListExamples.class
+├── ListExamples.java
+├── ListExamplesTests.class
+├── ListExamplesTests.java
+├── StringChecker.class
+├── grade.txt
+├── junit-output.txt
 ├── lib
 │   ├── hamcrest-core-1.3.jar
 │   └── junit-4.13.2.jar
-└── student-submission
-    └── ListExamples.java
+└── test.sh
 ```
 
 ## File Contents
