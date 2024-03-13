@@ -211,7 +211,10 @@ echo $gradescript >> grade.txt
 ---
 # Part 2 - Reflection
 
-In the second half of the quarter I learned a lot about using the command line. The bash scripting and java command processes are very interesting, although
+>In the second half of the quarter I learned a lot about using the command line. The bash scripting and java command processes are very interesting, although
 I do really struggle remembering the bash syntax. However I recognize the use and how important it can be for creating and running scripts. Using the java debugger is also something I learned how to do
 and it seems really useful especially for when I have long complicated code and need to understand what all the variables are doing. 
-Overall I feel as though I learned a lot of this quarter and want to learn even more.
+Overall I feel as though I learned a lot of this quarter and want to learn even more. Unrelated to the labs I also learned a lot about the tutoring process, and now I think I want to try to become a tutor for a CSE class for summer quarter. It seems fun and I like helping people with their code so I think I could enjoy it.
+
+
+Thanks for your hard work grading this quarter! 
